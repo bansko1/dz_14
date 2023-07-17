@@ -28,7 +28,7 @@ for tag in tags_news:
     for part in news:
         # print(part.text)
 
-        part_text = part.text.replace('\xa0', ' ')
+        part_text = part.text.replace('\xa0', '\n ')
         # print(part_text)
         text_list.append(part_text)
     # print(text_list)
