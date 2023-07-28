@@ -2,7 +2,7 @@ import os
 import telebot
 from parser import parce
 
-TOKEN = '6205794405:AAEbD8e5Rp4kZqqdrcMp_1NmB_I3hxOdhZE'
+TOKEN = '5205794405:AAEbD8e5Rp4kZqqdrcMp_1NmB_I3hxOdhZE'
 bot = telebot.TeleBot(TOKEN)
 
 
@@ -29,14 +29,14 @@ def send_welcome(message):
 #     bot.reply_to(message, f'{text.upper()}!')
 
 
-@bot.message_handler(commands=['admin'], func=lambda message: message.from_user.id == 5076837299)
+@bot.message_handler(commands=['admin'], func=lambda message: message.from_user.id == 5076837298)
 def admin(message):
     print(message)
     info = os.name
     bot.reply_to(message, info)
 
 
-@bot.message_handler(commands=['parser'], func=lambda message: message.from_user.id == 5076837299)
+@bot.message_handler(commands=['parser'], func=lambda message: message.from_user.id == 5076837298)
 def parser(message):
     # print(message)
     numb = parce()
